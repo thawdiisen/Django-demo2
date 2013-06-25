@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My django demo1</title>
+	<style type="text/css">
+		li {display: inline;}
+	</style>
+</head>
+<body>
+
+<ul>
+{% for item in item_list %}
+    <li>
+    	<a href='{{ item }}'>{{ item }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
